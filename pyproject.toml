@@ -1,0 +1,19 @@
+[project]
+name = "tpcdi-bigquery"
+version = "0.1.0"
+description = "A utility for loading TPC-DI generated files into BigQuery."
+requires-python = ">=3.14"
+dependencies = [
+    "google-cloud-bigquery>=3.47.0",
+    "google-cloud-storage>=3.17.1",
+    "rich>=15.0.0",
+    "typer>=0.29.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
+
+[tool.ruff]
+line-length = 120
